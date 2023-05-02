@@ -5,7 +5,7 @@ import datetime
 
 
 class DB(object):
-    def __init__(self, db_fp=f'{PATH_TO_DB}data.db'):
+    def __init__(self, db_fp=f'data/data.db'):
         self.db_fp = db_fp
         self.headers = {"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"}
         self.base = sqlite3.connect(self.db_fp, check_same_thread=False)
